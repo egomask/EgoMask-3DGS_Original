@@ -1,5 +1,9 @@
 submodules/diff-gaussian-rasterization
 submodules/simple-knn
+plyfile==0.8.1
+openai-clip
+matplotlib
+scikit-learn
 tqdm
 imageio==2.27.0
 opencv-python
@@ -7,7 +11,6 @@ imageio-ffmpeg
 scipy
 dearpygui
 lpips
-ninja
-pytorch_lightning
-dinov2
+seaborn
+scikit-image
 
