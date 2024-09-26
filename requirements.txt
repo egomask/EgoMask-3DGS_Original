@@ -1,0 +1,13 @@
+submodules/diff-gaussian-rasterization
+submodules/simple-knn
+tqdm
+imageio==2.27.0
+opencv-python
+imageio-ffmpeg
+scipy
+dearpygui
+lpips
+ninja
+pytorch_lightning
+dinov2
+
