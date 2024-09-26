@@ -5,9 +5,7 @@
 
 ## Dataset
 
-In our paper, we use:
 
-- Craft Egocentric Dataset [AImove](https://www.kaggle.com/datasets/olivasbre/aimove?select=EgoMask).
 
 We organize the datasets as follows:
 
