@@ -34,7 +34,7 @@ We organize the datasets as follows:
 
 The codebase has 2 main components: 
 A PyTorch-based optimizer to produce a 3D Gaussian model from SfM inputs
-A script to help you turn your own images into optimization-ready SfM data sets
+A script to help you turn your images into optimization-ready SfM data sets
 
 The components have different requirements w.r.t. both hardware and software. They have been tested on Windows 10
 
@@ -54,11 +54,11 @@ Conda
 
 
 ```shell
-git clone https://github.com/egomask/EgoMask-3DGS.git --recursive
-cd EgoMask-3DGS
+git clone https://github.com/egomask/EgoMask-3DGS_Original.git --recursive
+cd EgoMask-3DGS_Original
 
-conda create -n EgoMask_env python=3.7
-conda activate EgoMask_env
+conda create -n EgoMask_Original_env python=3.7
+conda activate EgoMask_Original_env
 
 # install pytorch
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
@@ -71,16 +71,16 @@ pip install -r requirements.txt
 
 ### Train
 
-**EgoMask Dataset:**
+** Dataset:**
 
 ```shell
-python train.py -s path/to/Egomask/dataset -m output/exp-name --eval --is_blender
+python train.py -s path/to/dataset -m output/exp-name --eval --is_blender
 ```
 
 ### Render & Evaluation
 
 ```shell
-python render.py -s path/to/Egomask/dataset data-m output/exp-name 
+python render.py -s path/to/dataset data-m output/exp-name 
 python metrics.py -m output/exp-name
 ```
 
